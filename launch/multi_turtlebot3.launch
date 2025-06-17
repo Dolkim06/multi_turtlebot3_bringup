@@ -1,15 +1,11 @@
 <launch>
   <!-- 외부에서 전달받을 인자들 정의 -->
   <arg name="robot_name" default="robot1" />
-  <arg name="turtlebot3_model" default="burger" />
   <arg name="set_frame_id" default="robot1_tf/base_scan" />
   <arg name="multi_robot_name" default="robot1_tf" />
 
   <!-- 네임스페이스 그룹으로 묶기 -->
   <group ns="$(arg robot_name)">
-
-    <!-- 모델 파라미터 설정 -->
-    <param name="turtlebot3_model" value="$(arg turtlebot3_model)" />
 
     <!-- Core 실행 -->
     <include file="$(find turtlebot3_bringup)/launch/turtlebot3_core.launch">
