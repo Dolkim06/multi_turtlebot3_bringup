@@ -20,6 +20,13 @@
     <!-- 진단 노드 실행 -->
     <node pkg="turtlebot3_bringup" type="turtlebot3_diagnostics" name="diagnostics" output="screen" />
 
+    <!--UWB launch 실행-->
+    <!--<include file="$(find mdek_driver)/launch/ranges.launch">
+      <arg name="port" value="/dev/serial/by-id/usb-SEGGER_J-Link_000760194046-if00"/>
+      <arg name="baud" value="115200"/>
+    </include>-->
   </group>
+
 </launch>
+
 
